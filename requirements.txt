@@ -1,0 +1,50 @@
+# ─────────────────────────────────────────────────────────────
+# Learning LangChain — Python Dependencies
+# Install with: pip install -r requirements.txt
+# Python version: 3.10+
+# ─────────────────────────────────────────────────────────────
+
+# ── Core LangChain ───────────────────────────────────────────
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+
+# ── LLM Providers ────────────────────────────────────────────
+langchain-google-genai          # Google Gemini
+langchain-groq                  # Groq (fast inference)
+langchain-ollama                # Local Ollama models
+langchain-huggingface           # HuggingFace models
+
+# ── LangServe (API serving) ───────────────────────────────────
+langserve[all]
+
+# ── LangSmith (tracing & observability) ───────────────────────
+langsmith
+
+# ── Vector Stores ─────────────────────────────────────────────
+faiss-cpu                       # Facebook AI Similarity Search
+chromadb                        # Chroma vector database
+
+# ── Embeddings & Local Models ─────────────────────────────────
+sentence-transformers           # For HuggingFace BGE embeddings
+transformers                    # HuggingFace model pipeline
+torch                           # Required by transformers (CPU)
+
+# ── Document Loaders ──────────────────────────────────────────
+pypdf                           # PDF loading
+beautifulsoup4                  # Web scraping (WebBaseLoader)
+wikipedia                       # Wikipedia tool for agents
+arxiv                           # Arxiv tool for agents
+
+# ── Web & API ─────────────────────────────────────────────────
+fastapi
+uvicorn[standard]
+requests
+
+# ── UI ────────────────────────────────────────────────────────
+streamlit
+
+# ── Utilities ─────────────────────────────────────────────────
+python-dotenv                   # Load .env file
+numpy
